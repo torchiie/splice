@@ -452,18 +452,16 @@ body {
 .card {
   background: #f8f8f8;
   border-radius: 8px;
-  width: 361px;
-  height: 453px;
-  margin-right: 10px;
+  padding: 8px 8px 32px 8px;
+  margin-right: 12px;
 }
 .card-image {
   position: relative;
-  padding: 32px 69px 30px 69px;
+  padding: 32px 64px 32px 68px;
 }
 
 .card-content p {
-  width: 285px;
-  height: 100px;
+  padding-right: 16px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -476,8 +474,6 @@ body {
 }
 
 .card-content h6 {
-  width: 98px;
-  height: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -627,52 +623,54 @@ body {
 }
 
 @media screen and (max-width:1200px) {
-  .image-rightside img {
-    width: 520px;
-    margin-top: 120px;
-}
 
-  .leftpicture img {
-    width: 520px;
+  .catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .rightside-thirdpage h6 {
-    margin-left: 245px;
-}
-.rightside-thirdpage h2 {
-  margin-left: 0px;
-}
-.rightside-thirdpage p {
-  margin-left: 0px;
-  width: 400px;
-}
-.image-rightside2 img {
-  width: 500px;
-  height: 300px;
-  margin-top:140px;
-}
-.leftpicture2 img {
-  width: 550px;
-  height: 357px;
-}
-.rightside-fifthpage h2 {
-  margin-left: 20px;
-}
-.rightside-fifthpage h6 {
-  margin-left: 275px;
-}
-.rightside-fifthpage p {
-  margin-left: 20px;
-  width: 350px;
-}
-.rightside-fifthpage button {
-  margin-left: 215px;
-}
-.card {
-  width: 325px;
-}
-.creators h2 {
-  justify-content: center;
-}
+  .thirdpage-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gear-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discover-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-right: 50%;
+    margin-left: 50%;
+  }
+  .headline-6page h2{
+    justify-content: center; 
+  }
+  
+  .footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+  .column4 {
+    margin-left: 50px;
+  }
+  .footer-item {
+    margin-left: 18px;
+  } 
 }
 
 @media screen and (max-width:992px) {
